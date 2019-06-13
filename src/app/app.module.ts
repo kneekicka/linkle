@@ -7,9 +7,14 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PageComponent } from './page/page.component';
+import { RegisterComponent } from './register/register.component';
+import { SettingsComponent } from './settings/settings.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
+  { path: 'account', component: PageComponent },
+  { path: 'registration', component: RegisterComponent },
+  { path: 'settings', component: SettingsComponent },
   { path: '',
     redirectTo: 'login',
     pathMatch: 'full'
@@ -20,7 +25,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     LoginComponent,
-    PageComponent
+    PageComponent,
+    RegisterComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,

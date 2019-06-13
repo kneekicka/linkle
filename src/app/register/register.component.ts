@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../models/user';
 import { Router } from '@angular/router';
 
-import { User } from '../models/user';
-
 @Component({
-  selector: 'll-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  selector: 'll-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class RegisterComponent implements OnInit {
 
   user = new User(18, 'User', '123');
 
