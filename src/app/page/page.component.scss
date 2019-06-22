@@ -1,3 +1,18 @@
+.page {
+  margin: 50px auto;
+  max-width: 250px;
+}
+
+.page-avatar {
+  height: 250px;
+  width: 250px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
 .linkle-link{
   display: block;
   max-width: 250px;

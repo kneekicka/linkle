@@ -10,7 +10,7 @@ import { User } from '../models/user';
 })
 export class LoginComponent implements OnInit {
 
-  user = new User(18, 'User', '123');
+  user = new User( '', '');
 
   submitted = false;
 

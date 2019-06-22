@@ -10,7 +10,13 @@ import { PageComponent } from './page/page.component';
 import { RegisterComponent } from './register/register.component';
 import { SettingsComponent } from './settings/settings.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule, MatInputModule, MatCardModule, MatFormFieldModule } from '@angular/material';
+import { MatButtonModule,
+        MatCheckboxModule,
+        MatInputModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatMenuModule,
+        MatIconModule} from '@angular/material';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -44,7 +50,9 @@ const appRoutes: Routes = [
     MatCheckboxModule,
     MatInputModule,
     MatCardModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatMenuModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,20 +4,19 @@
   </mat-card-title>
 
   <mat-card-content>
-    <form (submit)="onSubmit()">
+    <form #userForm="ngForm" (submit)="onSubmit()">
       <p>
         <mat-form-field>
-          <input matInput placeholder="Name">
+          <input matInput placeholder="Name" name="name" [(ngModel)]="user.name" required>
         </mat-form-field>
       </p>
 
       <p>
         <mat-form-field>
-          <input type="password" matInput placeholder="Password">
+          <input type="password" matInput placeholder="Password" name="password" [(ngModel)]="user.password"  required>
         </mat-form-field>
       </p>
-
-      <button mat-button color="primary">Submit</button>
+      <button mat-button color="primary" type="submit" [disabled]="!userForm.form.valid">Submit</button>
     </form>
   </mat-card-content>
 </mat-card>
